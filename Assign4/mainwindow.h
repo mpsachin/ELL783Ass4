@@ -1,9 +1,19 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+
+#include <QMainWindow>
+
+
 #include <vector>
 using namespace std;
-#include <QMainWindow>
+#include <pthread.h>
+#include <sys/types.h>
+#include <sys/ipc.h>
+#include <sys/msg.h>
+#include <sys/sem.h>
+#include <unistd.h>
+
 #include "mainwindow1.h"
 #include "mainwindow2.h"
 
@@ -43,5 +53,7 @@ public:
             }
         }
     }*/
+
+
 };
 #endif // MAINWINDOW_H
