@@ -26,7 +26,11 @@ void *threadfunAddReq1(void * i)
         ((Ui::MainWindow1 *)i)->label_2->setText(qstr);
         sleep(2);
         // Add request in msg queue
-
+        static int cntr=1;
+        char str[100];
+        memset(str,0,100);
+        sprintf(str,"Customer%d",cntr++);
+        msgsend(str);
         // sem1 release
         //mysemv(0);
 

@@ -31,6 +31,8 @@ if(ANDROID)
     main.cpp
     mysem.cpp
     mysem.h
+    msgq.cpp
+    msgq.h
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
@@ -46,6 +48,8 @@ else()
     main.cpp
     mysem.cpp
     mysem.h
+    msgq.cpp
+    msgq.h
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui

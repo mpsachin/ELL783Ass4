@@ -3,6 +3,7 @@
 
 #include <unistd.h>
 #include "mysem.h"
+#include "msgq.h"
 #include <QMainWindow>
 
 namespace Ui {

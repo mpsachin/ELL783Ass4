@@ -37,7 +37,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string>Thread Req Tecieved</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">

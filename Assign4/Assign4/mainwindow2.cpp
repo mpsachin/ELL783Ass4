@@ -26,10 +26,11 @@ void *threadfunRecReq2(void * i)
             //mysemp(0);
 
             // Add request in msg queue
-
+        	char str[200];
+        	strcpy(str,msgreceive());
             // sem1 release
             mysemv(0);
-            QString qstr = "AddReq:: Semaphore Increment" +QString::number(mysemval(0));
+            QString qstr = "AddReq:: Semaphore Increment" +QString::number(mysemval(0)) + QString::fromUtf8(str);
             ((Ui::MainWindow2 *)i)->label_2->setText(qstr);
             //((Ui::MainWindow2 *)i)->label_2->setText("RecReq::Thread End");
             sleep(2);
