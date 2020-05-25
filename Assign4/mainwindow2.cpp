@@ -16,19 +16,25 @@ MainWindow2::~MainWindow2()
 
 void *threadfunRecReq2(void * i)
 {
+    //printf("Inside Thread Service Provider Personnel\n");
+    ((Ui::MainWindow2 *)i)->label_2->setText("RecReq::Thread start");
+    //sleep(2);
     while(1){
-        //printf("Inside Thread Service Provider Personnel\n");
-        ((Ui::MainWindow2 *)i)->label_2->setText("RecReq::Thread start");
-        sleep(2);
+        if(MAXSEM1 > mysemval(0)){
 
-        // Sem2 Wait
+            // Sem1 Wait
+            //mysemp(0);
 
-        // Add request in msg queue
-
-        // sem2 release
-
-        ((Ui::MainWindow2 *)i)->label_2->setText("RecReq::Thread End");
-        sleep(2);
+            // Add request in msg queue
+        	char str[200];
+        	strcpy(str,msgreceive());
+            // sem1 release
+            mysemv(0);
+            QString qstr = "AddReq:: Semaphore Increment" +QString::number(mysemval(0)) + QString::fromUtf8(str);
+            ((Ui::MainWindow2 *)i)->label_2->setText(qstr);
+            //((Ui::MainWindow2 *)i)->label_2->setText("RecReq::Thread End");
+            sleep(2);
+        }
     }
     return NULL;
 }

@@ -29,6 +29,10 @@ find_package(Qt5 COMPONENTS Widgets REQUIRED)
 if(ANDROID)
   add_library(Assign4 SHARED
     main.cpp
+    mysem.cpp
+    mysem.h
+    msgq.cpp
+    msgq.h
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
@@ -42,6 +46,10 @@ if(ANDROID)
 else()
   add_executable(Assign4
     main.cpp
+    mysem.cpp
+    mysem.h
+    msgq.cpp
+    msgq.h
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui

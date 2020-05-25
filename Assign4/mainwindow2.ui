@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>202</width>
+    <width>354</width>
     <height>334</height>
    </rect>
   </property>
@@ -32,12 +32,12 @@
      <rect>
       <x>10</x>
       <y>20</y>
-      <width>231</width>
+      <width>341</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string>Thread Req Tecieved</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -59,7 +59,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>202</width>
+     <width>354</width>
      <height>22</height>
     </rect>
    </property>

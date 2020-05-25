@@ -14,6 +14,7 @@ using namespace std;
 #include <sys/sem.h>
 #include <unistd.h>
 
+#include "mysem.h"
 #include "mainwindow1.h"
 #include "mainwindow2.h"
 
